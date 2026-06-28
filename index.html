@@ -1,62 +1,114 @@
-<!-- final fix 1 -->
-<!-- redeploy -->
-<!-- update -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AL-DAAM ICT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AL-DAAM ICT</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial;
-            background: linear-gradient(to right, #0078D7, #00b4db);
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f5f7fa;
+}
 
-        h1 {
-            font-size: 50px;
-            margin-bottom: 10px;
-        }
+/* Navbar */
+.nav {
+    background: #0a6ebd;
+    padding: 15px;
+    text-align: center;
+}
+.nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        p {
-            font-size: 20px;
-            margin-top: 0;
-        }
+/* Hero */
+.hero {
+    background: linear-gradient(to right, #0078D7, #00b4db);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
 
-        .box {
-            background: rgba(0,0,0,0.2);
-            padding: 30px;
-            border-radius: 12px;
-            display: inline-block;
-        }
+.hero h1 {
+    font-size: 50px;
+}
 
-        .footer {
-            margin-top: 40px;
-            font-size: 16px;
-            opacity: 0.8;
-        }
-    </style>
+/* Sections */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+.contact {
+    background: #0a6ebd;
+    color: white;
+    padding: 50px 20px;
+}
+
+/* WhatsApp Button */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+</style>
+
 </head>
 <body>
 
-    <div class="box">
-        <h1>AL-DAAM ICT</h1>
-        <p>Professional IT Solutions</p>
+<!-- NAVBAR -->
+<div class="nav">
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</div>
 
-        <hr style="margin:20px 0; border:1px solid white;">
+<!-- HERO -->
+<div class="hero">
+    <h1>AL-DAAM ICT</h1>
+    <p>Professional IT Solutions</p>
+</div>
 
-        <p>Email: it@daam-it.com</p>
-        <p>Phone: +966 555 721 088</p>
-    </div>
-
-    <div class="footer">
-        © 2026 AL-DAAM ICT. All Rights Reserved
-    </div>
-
-</body>
-</html>
+<!-- SERVICES -->
+<div class="section" id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service-box">
+            <h3>💻 IT Support</h3>
+            <p>Professional technical support for all systems.</p>
+        </div>
+        <div class="service-box">
+            <h3>🌐 Networking</h3>
