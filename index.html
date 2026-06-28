@@ -1,4 +1,3 @@
-<!-- fix 404 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,42 +6,103 @@
 <title>AL-DAAM ICT</title>
 
 <style>
-body { margin:0; font-family:Arial; }
+body {margin:0; font-family:Arial;}
 
-/* NAV */
 .nav {
   background:#0a6ebd;
-  padding:15px;
   text-align:center;
+  padding:15px;
 }
 .nav a {
   color:white;
-  margin:0 15px;
+  margin:0 10px;
   text-decoration:none;
-  font-weight:bold;
 }
 
-/* HERO */
 .hero {
   background:linear-gradient(to right,#0078D7,#00b4db);
   color:white;
   text-align:center;
-  padding:80px 20px;
+  padding:80px;
 }
 
-/* SECTIONS */
 .section {
-  padding:50px 20px;
+  padding:40px;
   text-align:center;
 }
 
-/* SERVICES */
 .services {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  display:flex;
+  flex-wrap:wrap;
   gap:20px;
+  justify-content:center;
 }
+
 .box {
   background:white;
   padding:20px;
-  border-radius:10px;
+  width:250px;
+  box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+.contact {
+  background:#0a6ebd;
+  color:white;
+  padding:40px;
+}
+
+.footer {
+  background:#222;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+.whatsapp {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  padding:10px 15px;
+  color:white;
+  text-decoration:none;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="nav">
+  Home
+  About
+  Services
+  Contact
+</div>
+
+<div class="hero">
+  <h1>AL-DAAM ICT</h1>
+  <p>Professional IT Solutions</p>
+</div>
+
+<div class="section">
+  <h2>About Us</h2>
+  <p>We provide IT services, networking, cloud and security solutions.</p>
+</div>
+
+<div class="section">
+  <h2>Services</h2>
+  <div class="services">
+    <div class="box">IT Support</div>
+    <div class="box">Networking</div>
+    <div class="box">Cloud</div>
+    <div class="box">Security</div>
+  </div>
+</div>
+
+<div class="contact">
+  <h2>Contact Us</h2>
+  <p>Email: it@daam-it.com</p>
+  <p>Phone: +966 555 721 088</p>
+</div>
+
