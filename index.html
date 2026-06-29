@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AL-DAAM ICT | IT Solutions</title>
+<title>AL-DAAM ICT</title>
 
 <style>
 body{
@@ -20,7 +20,6 @@ body{
   align-items:center;
   padding:15px 40px;
   background:white;
-  box-shadow:0 2px 10px rgba(0,0,0,0.05);
 }
 
 .nav img{
@@ -34,75 +33,94 @@ body{
   font-weight:bold;
 }
 
-.nav a:hover{
-  color:#0078D7;
-}
-
 /* HERO */
 .hero{
   background:linear-gradient(to right,#0078D7,#00b4db);
   color:white;
   text-align:center;
-  padding:120px 20px;
-}
-
-.hero h1{
-  font-size:50px;
-}
-
-.hero p{
-  font-size:22px;
-  margin-top:10px;
-}
-
-/* BUTTON */
-.btn{
-  display:inline-block;
-  margin-top:25px;
-  padding:12px 30px;
-  background:white;
-  color:#0078D7;
-  text-decoration:none;
-  border-radius:5px;
-  font-weight:bold;
-}
-
-.btn:hover{
-  background:#0078D7;
-  color:white;
+  padding:100px 20px;
 }
 
 /* SECTION */
 .section{
-  padding:70px 20px;
+  padding:60px 20px;
   text-align:center;
 }
 
 /* SERVICES */
 .services{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  display:flex;
+  justify-content:center;
   gap:20px;
-  margin-top:30px;
+  flex-wrap:wrap;
 }
 
 .card{
   background:white;
-  padding:25px;
+  padding:20px;
   border-radius:10px;
-  box-shadow:0 5px 20px rgba(0,0,0,0.1);
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:translateY(-10px);
-}
-
-/* WHY */
-.why p{
-  font-size:18px;
-  margin:10px;
+  width:200px;
 }
 
 /* CONTACT */
 .contact{
+  background:#0a2540;
+  color:white;
+  padding:50px;
+}
+
+/* FOOTER */
+.footer{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="nav">
+  <img src="logo.png">
+
+  <div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>AL-DAAM ICT</h1>
+  <p>Professional IT Solutions</p>
+</div>
+
+<!-- ABOUT -->
+<div class="section">
+  <h2>About Us</h2>
+  <p>We provide IT solutions including networking, cloud, and cybersecurity.</p>
+</div>
+
+<!-- SERVICES -->
+<div class="section">
+  <h2>Our Services</h2>
+
+  <div class="services">
+    <div class="card">IT Support</div>
+    <div class="card">Networking</div>
+    <div class="card">Cloud</div>
+    <div class="card">Security</div>
+  </div>
+
+</div>
+
+<!-- CONTACT -->
+<div class="contact">
+  <h2>Contact Us</h2>
+  <p>Email: it@daam-it.com</p>
+  <p>Phone: +966 555 721 088</p>
