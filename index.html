@@ -27,7 +27,24 @@ body {
   text-decoration:none;
   font-weight:500;
 }
+.nav a {
+  position: relative;
+}
 
+.nav a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #0078D7;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: 0.3s;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
 .nav a:hover {
   color:#0078D7;              /* لون Microsoft */
 }
