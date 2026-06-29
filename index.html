@@ -9,8 +9,8 @@
 <style>
 body{
   margin:0;
-  font-family:Arial;
-  background:#f4f6f9;
+  font-family: 'Segoe UI', Arial;
+  background:#f8fafc;
 }
 
 /* NAVBAR */
@@ -18,55 +18,98 @@ body{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:15px 40px;
+  padding:20px 50px;
   background:white;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
 }
 
-.nav img{
-  height:60px;
+.logo{
+  display:flex;
+  align-items:center;
 }
 
-.nav a{
-  margin-left:20px;
+.logo img{
+  height:55px;
+}
+
+.nav-links a{
+  margin-left:25px;
   text-decoration:none;
   color:#333;
-  font-weight:bold;
+  font-weight:600;
+}
+
+.nav-links a:hover{
+  color:#0078D7;
 }
 
 /* HERO */
 .hero{
-  background:linear-gradient(to right,#0078D7,#00b4db);
-  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
   text-align:center;
-  padding:100px 20px;
+  height:90vh;
+  background:linear-gradient(to right,#0078D7,#00c6ff);
+  color:white;
+}
+
+.hero h1{
+  font-size:60px;
+  margin-bottom:15px;
+}
+
+.hero p{
+  font-size:22px;
+  max-width:600px;
+}
+
+.btn{
+  margin-top:25px;
+  padding:15px 35px;
+  background:white;
+  color:#0078D7;
+  text-decoration:none;
+  border-radius:6px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#005fa3;
+  color:white;
 }
 
 /* SECTION */
 .section{
-  padding:60px 20px;
+  padding:80px 20px;
   text-align:center;
 }
 
 /* SERVICES */
 .services{
-  display:flex;
-  justify-content:center;
-  gap:20px;
-  flex-wrap:wrap;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+  margin-top:40px;
 }
 
 .card{
   background:white;
-  padding:20px;
-  border-radius:10px;
-  width:200px;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  transition:0.3s;
 }
 
-/* CONTACT */
-.contact{
-  background:#0a2540;
-  color:white;
-  padding:50px;
+.card:hover{
+  transform:translateY(-12px);
+}
+
+/* WHY */
+.why{
+  background:#eef4ff;
 }
 
 /* FOOTER */
@@ -74,7 +117,7 @@ body{
   background:#111;
   color:white;
   text-align:center;
-  padding:20px;
+  padding:25px;
 }
 </style>
 
@@ -82,11 +125,13 @@ body{
 
 <body>
 
-<!-- NAVBAR -->
+<!-- NAV -->
 <div class="nav">
-  <img src="logo.png">
+  <div class="logo">
+    <img src="logo.png">
+  </div>
 
-  <div>
+  <div class="nav-links">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
@@ -96,31 +141,6 @@ body{
 
 <!-- HERO -->
 <div class="hero">
-  <h1>AL-DAAM ICT</h1>
-  <p>Professional IT Solutions</p>
-</div>
+  <h1>Empowering Your Digital Future</h1>
+  <p>We deliver modern IT solutions, cloud services and cybersecurity for your business growth.</p>
 
-<!-- ABOUT -->
-<div class="section">
-  <h2>About Us</h2>
-  <p>We provide IT solutions including networking, cloud, and cybersecurity.</p>
-</div>
-
-<!-- SERVICES -->
-<div class="section">
-  <h2>Our Services</h2>
-
-  <div class="services">
-    <div class="card">IT Support</div>
-    <div class="card">Networking</div>
-    <div class="card">Cloud</div>
-    <div class="card">Security</div>
-  </div>
-
-</div>
-
-<!-- CONTACT -->
-<div class="contact">
-  <h2>Contact Us</h2>
-  <p>Email: it@daam-it.com</p>
-  <p>Phone: +966 555 721 088</p>
