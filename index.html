@@ -1,27 +1,23 @@
-<!-- fix deploy -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>AL-DAAM ICT | IT Solutions</title>
+<title>AL-DAAM ICT</title>
 
 <style>
 body {
   margin:0;
-  font-family: Arial;
+  font-family:Arial;
   background:#f5f7fa;
 }
 
-/* NAVBAR */
 .nav {
   display:flex;
   justify-content:space-between;
   align-items:center;
   padding:15px 40px;
   background:#0a2540;
-  color:white;
 }
 .nav img {
   height:60px;
@@ -32,67 +28,88 @@ body {
   text-decoration:none;
 }
 
-/* HERO */
 .hero {
   background:linear-gradient(to right,#0078D7,#00b4db);
   color:white;
-  padding:100px 20px;
   text-align:center;
-}
-.hero h1 {
-  font-size:50px;
-}
-.hero button {
-  padding:12px 25px;
-  margin-top:20px;
-  border:none;
-  background:#25D366;
-  color:white;
-  cursor:pointer;
+  padding:100px 20px;
 }
 
-/* SECTION */
 .section {
   padding:60px 20px;
   text-align:center;
 }
 
-/* SERVICES */
 .services {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  display:flex;
+  flex-wrap:wrap;
   gap:20px;
-  padding:30px;
+  justify-content:center;
 }
 .card {
   background:white;
   padding:20px;
+  width:250px;
   border-radius:10px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.1);
-  transition:0.3s;
-}
-.card:hover {
-  transform: translateY(-10px);
 }
 
-/* CONTACT */
 .contact {
   background:#0a2540;
   color:white;
   padding:60px 20px;
 }
 
-/* FOOTER */
 .footer {
   background:#111;
   color:white;
-  padding:20px;
   text-align:center;
+  padding:20px;
 }
+</style>
 
-/* WHATSAPP */
-.whatsapp {
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
+</head>
+
+<body>
+
+<div class="nav">
+  <img src="logo.png">
+  <div>
+    Home
+    About
+    Services
+    Contact
+  </div>
+</div>
+
+<div class="hero">
+  <h1>AL-DAAM ICT</h1>
+  <p>Professional IT Solutions</p>
+</div>
+
+<div class="section">
+  <h2>About Us</h2>
+  <p>We provide IT solutions including networking, cloud, and security.</p>
+</div>
+
+<div class="section">
+  <h2>Services</h2>
+  <div class="services">
+    <div class="card">IT Support</div>
+    <div class="card">Networking</div>
+    <div class="card">Cloud</div>
+    <div class="card">Security</div>
+  </div>
+</div>
+
+<div class="contact">
+  <h2>Contact Us</h2>
+  <p>Email: it@daam-it.com</p>
+  <p>Phone: +966 555 721 088</p>
+</div>
+
+<div class="footer">
+  © 2026 AL-DAAM ICT
+</div>
+
+</body>
+</html>
