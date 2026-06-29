@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AL-DAAM ICT</title>
+<title>AL-DAAM ICT | IT Solutions</title>
 
 <style>
 body {
@@ -12,165 +12,58 @@ body {
   background:#f5f7fa;
 }
 
+/* NAVBAR */
 .nav {
   display:flex;
   justify-content:space-between;
   align-items:center;
   padding:15px 40px;
-  background: white;          /* ✅ بدل الأسود */
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* ظل خفيف */
-}
-
-.nav a {
-  color:#333;                 /* لون احترافي */
-  margin-left:20px;
-  text-decoration:none;
-  font-weight:500;
-}
-.nav a {
-  position: relative;
-}
-
-.nav a::after {
-  content: "";
-  width: 0;
-  height: 2px;
-  background: #0078D7;
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  transition: 0.3s;
-}
-
-.nav a:hover::after {
-  width: 100%;
-}
-.nav a:hover {
-  color:#0078D7;              /* لون Microsoft */
+  background:white;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+  position:sticky;
+  top:0;
 }
 
 .nav img {
   height:60px;
 }
 
-<div class="hero">
-  <h1>Empowering Your Digital Future</h1>
-  <p>Advanced IT Solutions, Cloud, and Cybersecurity for Modern Businesses</p>
-
-  <a href="contact.html" class="btn">Get Started</a>
-</div>
-.section {
-  padding:60px 20px;
-  text-align:center;
+.nav a {
+  color:#333;
+  margin-left:20px;
+  text-decoration:none;
+  font-weight:500;
+  position: relative;
 }
 
-.services {
-  display:flex;
-  flex-wrap:wrap;
-  gap:20px;
-  justify-content:center;
-}
-  <div class="section">
-  <h2>Why Choose Us</h2>
-
-  <p>✔ Professional Team</p>
-  <p>✔ 24/7 Support</p>
-  <p>✔ Secure & Reliable Solutions</p>
-</div>
-<div class="card">
-  <h3>💻 IT Support</h3>
-  <p>24/7 technical support for your business systems.</p>
-</div>
-.card {
-  background:white;
-  padding:25px;
-  border-radius:10px;
-  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+.nav a::after {
+  content:"";
+  width:0;
+  height:2px;
+  background:#0078D7;
+  position:absolute;
+  bottom:-5px;
+  left:0;
   transition:0.3s;
 }
 
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow:0 10px 30px rgba(0,0,0,0.2);
-}
-.contact {
-  background:#0a2540;
-  color:white;
-  padding:60px 20px;
+.nav a:hover::after {
+  width:100%;
 }
 
-.footer {
-  background:#111;
+/* HERO */
+.hero {
+  background:linear-gradient(to right,#0078D7,#00b4db);
   color:white;
   text-align:center;
-  padding:20px;
+  padding:120px 20px;
 }
-</style>
-
-</head>
-
-<body>
-
-<div class="nav">
-  <img src="logo.png">
-  <div>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</div>
 
 .hero h1 {
-  font-size: 55px;
-  margin-bottom: 20px;
+  font-size:55px;
 }
 
 .hero p {
-  font-size: 20px;
+  font-size:20px;
 }
 
-.btn {
-  display:inline-block;
-  background:white;
-  color:#0078D7;
-  padding:12px 25px;
-  margin-top:20px;
-  text-decoration:none;
-  font-weight:bold;
-  border-radius:5px;
-}
-
-.btn:hover {
-  background:#0078D7;
-  color:white;
-}
-``
-
-<div class="section">
-  <h2>About Us</h2>
-  <p>We provide IT solutions including networking, cloud, and security.</p>
-</div>
-
-<div class="section">
-  <h2>Services</h2>
-  <div class="services">
-    <div class="card">IT Support</div>
-    <div class="card">Networking</div>
-    <div class="card">Cloud</div>
-    <div class="card">Security</div>
-  </div>
-</div>
-
-<div class="contact">
-  <h2>Contact Us</h2>
-  <p>Email: it@daam-it.com</p>
-  <p>Phone: +966 555 721 088</p>
-</div>
-
-<div class="footer">
-  © 2026 AL-DAAM ICT
-</div>
-
-</body>
-</html>
