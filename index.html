@@ -5,30 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AL-DAAM ICT</title>
 
-<<style>
-body { margin:0; font-family:Arial; }
-
 <style>
-.nav {
-  background:#0a6ebd;
+body {
+  margin:0;
+  font-family:Arial;
 }
 
-.nav img {
-  margin-right: 20px;
-  height: 40px;
-}
-</style>
-</style>>
-body {margin:0; font-family:Arial;}
-
-<div class="nav">
-  <img src="logo.png" style="height:40px; vertical-align:middle;">
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#contact">Contact</a>
-</div>
-
+/* NAVBAR */
 .nav {
   background:#0a6ebd;
   text-align:center;
@@ -39,7 +22,13 @@ body {margin:0; font-family:Arial;}
   margin:0 10px;
   text-decoration:none;
 }
+.nav img {
+  height:40px;
+  vertical-align:middle;
+  margin-right:10px;
+}
 
+/* HERO */
 .hero {
   background:linear-gradient(to right,#0078D7,#00b4db);
   color:white;
@@ -47,18 +36,19 @@ body {margin:0; font-family:Arial;}
   padding:80px;
 }
 
+/* SECTIONS */
 .section {
   padding:40px;
   text-align:center;
 }
 
+/* SERVICES */
 .services {
   display:flex;
   flex-wrap:wrap;
   gap:20px;
   justify-content:center;
 }
-
 .box {
   background:white;
   padding:20px;
@@ -66,12 +56,14 @@ body {margin:0; font-family:Arial;}
   box-shadow:0 5px 10px rgba(0,0,0,0.1);
 }
 
+/* CONTACT */
 .contact {
   background:#0a6ebd;
   color:white;
   padding:40px;
 }
 
+/* FOOTER */
 .footer {
   background:#222;
   color:white;
@@ -79,6 +71,7 @@ body {margin:0; font-family:Arial;}
   padding:20px;
 }
 
+/* WHATSAPP */
 .whatsapp {
   position:fixed;
   bottom:20px;
@@ -87,34 +80,37 @@ body {margin:0; font-family:Arial;}
   padding:10px 15px;
   color:white;
   text-decoration:none;
+  border-radius:50px;
 }
 </style>
-.nav img {
-  margin-right: 20px;
-}
-``
+
 </head>
 
 <body>
 
+<!-- NAV -->
 <div class="nav">
-  Home
-  About
-  Services
-  Contact
+  <img src="logo.png">
+  <a href="#">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
 </div>
 
+<!-- HERO -->
 <div class="hero">
   <h1>AL-DAAM ICT</h1>
   <p>Professional IT Solutions</p>
 </div>
 
-<div class="section">
+<!-- ABOUT -->
+<div class="section" id="about">
   <h2>About Us</h2>
   <p>We provide IT services, networking, cloud and security solutions.</p>
 </div>
 
-<div class="section">
+<!-- SERVICES -->
+<div class="section" id="services">
   <h2>Services</h2>
   <div class="services">
     <div class="box">IT Support</div>
@@ -124,9 +120,20 @@ body {margin:0; font-family:Arial;}
   </div>
 </div>
 
-<div class="contact">
+<!-- CONTACT -->
+<div class="contact" id="contact">
   <h2>Contact Us</h2>
   <p>Email: it@daam-it.com</p>
   <p>Phone: +966 555 721 088</p>
 </div>
 
+<!-- WHATSAPP -->
+<a href="https://wa.me/966555721088" class="whatsapp">WhatsApp</a>
+
+<!-- FOOTER -->
+<div class="footer">
+  © 2026 AL-DAAM ICT
+</div>
+
+</body>
+</html>
