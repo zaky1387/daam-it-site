@@ -33,22 +33,10 @@ body {
   margin-left:20px;
   text-decoration:none;
   font-weight:500;
-  position: relative;
 }
 
-.nav a::after {
-  content:"";
-  width:0;
-  height:2px;
-  background:#0078D7;
-  position:absolute;
-  bottom:-5px;
-  left:0;
-  transition:0.3s;
-}
-
-.nav a:hover::after {
-  width:100%;
+.nav a:hover {
+  color:#0078D7;
 }
 
 /* HERO */
@@ -60,10 +48,25 @@ body {
 }
 
 .hero h1 {
-  font-size:55px;
+  font-size:50px;
 }
 
 .hero p {
   font-size:20px;
 }
 
+/* BUTTON */
+.btn {
+  display:inline-block;
+  padding:12px 25px;
+  background:white;
+  color:#0078D7;
+  text-decoration:none;
+  margin-top:20px;
+  border-radius:5px;
+  font-weight:bold;
+}
+
+.btn:hover {
+  background:#0078D7;
+  color:white;
